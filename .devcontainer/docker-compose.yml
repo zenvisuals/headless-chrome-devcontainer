@@ -49,3 +49,5 @@ networks:
 
 volumes:
   app-dev-node-modules:
+  redis:
+  redis-config:

@@ -12,5 +12,7 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${HOME_PATH}/.oh-
     && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${HOME_PATH}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 COPY .zshrc ${HOME_PATH}/
+COPY ./postAttachCommand.sh /postAttachCommand.sh
+RUN sudo chmod +x /postAttachCommand.sh
 
 CMD ["zsh"]

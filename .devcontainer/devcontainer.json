@@ -28,5 +28,5 @@
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "app_dev",
   "shutdownAction": "stopCompose",
-  "postAttachCommand": "git config --global --add safe.directory /workspace && sudo chown vscode node_modules"
+  "postAttachCommand": "/postAttachCommand.sh"
 }
